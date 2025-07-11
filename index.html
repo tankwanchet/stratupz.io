@@ -1,1 +1,77 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Chat Agent</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #f5f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    header {
+      background: #2d3748;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+    }
+    .chat-embed-area {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 2rem;
+      min-width: 350px;
+      min-height: 500px;
+      max-width: 90vw;
+      max-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .placeholder {
+      color: #a0aec0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .chat-embed-area {
+        padding: 1rem;
+        min-width: 90vw;
+        min-height: 60vh;
+      }
+      header {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Welcome to Chat Agent
+  </header>
+  <main>
+    <div class="chat-embed-area">
+      <!-- Embed your Open Web UI chat app here -->
+      <div class="placeholder">
+        Chat app will appear here.<br>
+        (Embed your Open Web UI chat app iframe or component)
+      </div>
+    </div>
+  </main>
+</body>
+</html>
